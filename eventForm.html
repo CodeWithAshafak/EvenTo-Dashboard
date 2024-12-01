@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookingForm</title>
+  <link rel="stylesheet" href="./eventForm.css">
+</head>
+<body>
+  <div class="formcover">
+    <form id="productform">
+      <h4> Event Booking Form</h4>
+      <label for="guestName"> Full Name</label>
+      <input type="text" placeholder="Enter organizer Name" id="guestName" />
+      <label for="mob">Mobile</label>
+      <input type="number" id="mob" placeholder="Enter Contact number" />
+
+      <label for="dateOfOrder"> Event Date & Time</label>
+      <input
+        type="datetime-local"
+        placeholder="date order"
+        id="dateOfOrder"
+      />
+      <label for="roomType">Event Details</label>
+      <input type="text" placeholder="Event details" id="roomType" />
+      <label for="status">Status</label>
+      <input type="text" placeholder="Pending" id="status" readonly />
+      <button id="Addbtn" onclick="submitDataa()">Book Event</button>
+      <!-- <button  id="updateButton" onclick="Update()">Update</button> -->
+    </form>
+  </div>
+  <script src="./eventForm.js"></script>
+</body>
+</html>

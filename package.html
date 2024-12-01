@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link rel="stylesheet" href="./package.css" />
+    <style>
+           
+    </style>
+    <title>Package</title>
+  </head>
+  <body onload="info()">
+    <!--************************* Small-Sidebar   *************************-->
+
+    <aside class="smallsidebar">
+      <div class="top">
+        <div class="upper">
+          <span id="arrow" onclick="largeSidebar()"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </div>
+
+        <div class="lower">
+          <ul>
+            <li>
+              <a href="./dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                <span></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-hotel"></i>
+                <span></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-photo-film"></i>
+                <span></span>
+              </a>
+            </li>
+
+            <!-- **** -->
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-cube"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-users-line"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-calendar-day"></i>
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <ul onclick="logout()">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--************************* large-Sidebar ********************************-->
+
+    <aside class="largesidebar">
+      <div class="top">
+        <div class="upper">
+          <span id="bar" onclick="smallsidebar()">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </span>
+          <div class="name">Even<span>TO</span></div>
+        </div>
+
+        <div class="lower">
+          <ul>
+            <li>
+              <a href="./dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Package</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-hotel"></i>
+                <span>Hotel</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-photo-film"></i>
+                <span>Gallary</span>
+              </a>
+            </li>
+
+            <!-- **** -->
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-cube"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-users-line"></i>
+                <span>Customers</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-calendar-day"></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <ul onclick="logout()">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--********** topbar  *******-->
+    <header>
+      <div class="logo">Admin Dashboard</div>
+
+      <div class="search">
+        <input type="text" placeholder=" Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="notification">
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-regular fa-moon"></i>
+      </div>
+      <!-- userdata on frontend -->
+      <div class="userData">
+        <div class="image">
+          <img
+            id="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5-3YjBcXTqKUlOAeUUtuOLKgQSma2wGG1g&s"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <span id="username"></span>
+          <span id="useremail"></span>
+        </div>
+      </div>
+    </header>
+   
+
+    <!-- search and addTo  form -->
+
+    <div id="operationSection">
+      <div id="button" style="display: none;">
+        <button onclick="addinfo()">Add package</button>
+      </div>
+      <select id="searchOptions">
+        <option value="name">search by name</option>
+        <option value="mobile">search by Mobile</option>
+      </select>
+      <input type="text" id="searchBox" />
+      <button onclick="datasearch()">Search</button>
+    </div>
+    <center>
+
+      <!-- Event  Form -->
+
+    <div class="formcover">
+      <form id="productform">
+        <h4>Event Booking Form</h4>
+        <label for="guestName">Name</label>
+        <input type="text" placeholder="Enter Guest Name" id="guestName" />
+        <label for="mob">Mobile</label>
+        <input type="number" id="mob" placeholder="enter mobile number" />
+
+        <label for="dateOfOrder">Time</label>
+        <input
+          type="datetime-local"
+          placeholder="date order"
+          id="dateOfOrder"
+        />
+        <label for="roomType">Type</label>
+        <input type="text" placeholder="Room type" id="roomType" />
+        <label for="status">Status</label>
+        <input type="text" placeholder="status" id="status" />
+        <button id="Addbtn" onclick="submitData()">Add Data</button>
+        <button  id="updateButton" onclick="Update()">Update</button>
+      </form>
+    </div>
+  </center>
+    
+
+    <center>
+              
+      <table id="showData" >
+        <thead>
+          <tr>
+              <th>ID</th>
+              <th>Customer Name</th>
+              <th>Booking Action</th>
+              <th>Booking Time</th>
+              <th>Mobile </th>
+              <th>Event Description</th>
+              <th>Action</th>
+              
+          </tr>
+      </thead>
+      
+      <tbody id="data">
+        
+      </tbody>
+
+      </table>
+     
+    </center>
+
+
+    <center>
+
+    <button id="dcbtn" onclick="pagedecrease()"><<</button>
+
+    &nbsp<span id="currentpage">1</span> &nbsp
+    
+    <button id="incbtn" onclick="pageincrease()">>></button>
+
+  </center>
+
+
+  
+    <script src="./loginInfo.js"></script>
+    <script src="./dashboard.js"></script>
+    <script src="./package.js"></script>
+  </body>
+</html>

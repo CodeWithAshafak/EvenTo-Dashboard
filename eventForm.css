@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./image/p5.jpg) no-repeat center center/cover;
+}
+
+.formcover {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: relative;
+  left: 480px;
+  top: 100px;
+  height: 510px;
+  width: 500px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formcover form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+}
+.formcover form h4 {
+  text-align: center;
+}
+.formcover form label {
+  font-size: 15px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.formcover form input {
+  text-align: center;
+  width: 200px;
+  height: 35px;
+}
+.formcover form button {
+  height: 35px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+.formcover form button:hover {
+  color: black;
+  background-color: wheat;
+}/*# sourceMappingURL=eventForm.css.map */

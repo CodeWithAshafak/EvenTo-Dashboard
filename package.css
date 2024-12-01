@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#operationSection {
+  margin-top: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#operationSection #button {
+  margin-right: 150px;
+}
+#operationSection #button button {
+  height: 50px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#operationSection #button button:hover {
+  background-color: greenyellow;
+  color: white;
+  border-radius: 10px;
+}
+#operationSection #searchOptions {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+}
+#operationSection #searchOptions option {
+  height: 50px;
+  width: 300px;
+}
+#operationSection input {
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+#operationSection button {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#operationSection button:hover {
+  color: white;
+  background-color: greenyellow;
+}
+
+.formcover {
+  height: 510px;
+  width: 500px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  display: none;
+}
+.formcover form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+}
+.formcover form h4 {
+  text-align: center;
+}
+.formcover form label {
+  font-size: 15px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.formcover form input {
+  text-align: center;
+  width: 200px;
+  height: 35px;
+}
+.formcover form button {
+  height: 35px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.formcover form button:hover {
+  color: white;
+  background-color: greenyellow;
+}
+.formcover form #updateButton {
+  display: none;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: separate;
+}
+
+th {
+  background-color: rgb(255, 165, 0);
+  color: white;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 2px;
+}/*# sourceMappingURL=package.css.map */

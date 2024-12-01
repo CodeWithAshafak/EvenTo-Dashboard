@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 500px;
+        top: 200px;
+        height: 500px;
+        width: 500px;
+        background-color: white;
+        color: black;
+        border: 3px dotted grey;
+        border-radius: 20px;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+      }
+      .main form {
+        height: 400px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 500px;
+        top: 200px;
+        gap: 20px;
+      }
+      .main form input {
+        height: 30px;
+        width: 300px;
+        text-align: center;
+      }
+      .main form button {
+        background-color: black;
+        color: white;
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+      }
+      .main form button:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+    <title>Registration form</title>
+  </head>
+  <body style="background-color: rgb(0, 0, 0)">
+    <div class="main">
+      <h4>Registration form</h4>
+
+      <form>
+        <input type="text" id="name" placeholder="Enter Name" />
+        <input type="text" id="image" placeholder="enter image url" />
+        <input type="email" id="email" placeholder="enter email" />
+        <input type="text" id="mob" placeholder="enter mobile number" />
+        <input type="password" id="password" placeholder="enter password" />
+        <input type="password" id="cpassword" placeholder="confirm password" />
+        <button onclick=" return registration()">Register</button>
+      </form>
+    </div>
+    <script src="./Registration.js"></script>
+  </body>
+</html>
