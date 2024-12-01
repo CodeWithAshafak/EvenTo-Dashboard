@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.smallsidebar {
+  float: left;
+  height: 100vh;
+  width: 70px;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+}
+.smallsidebar .top {
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.smallsidebar .top .lower {
+  height: 200px;
+}
+.smallsidebar .top .lower ul {
+  list-style: none;
+}
+.smallsidebar .top .lower ul li {
+  margin-top: 30px;
+}
+.smallsidebar .top .lower ul li a {
+  color: white;
+}
+.smallsidebar .bottom ul li {
+  list-style: none;
+}
+.smallsidebar .bottom ul li a {
+  color: white;
+}
+
+.largesidebar {
+  float: left;
+  height: 100vh;
+  width: 300px;
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.largesidebar .top {
+  height: 600px;
+  width: 300px;
+}
+.largesidebar .top .upper {
+  height: 150px;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.largesidebar .top .upper #bar i {
+  font-size: 25px;
+}
+.largesidebar .top .upper .name {
+  font-size: 25px;
+  font-weight: 500;
+}
+.largesidebar .top .upper .name span {
+  color: green;
+}
+.largesidebar .top .lower {
+  height: 450px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.largesidebar .top .lower ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.largesidebar .top .lower ul li {
+  list-style: none;
+}
+.largesidebar .top .lower ul li a {
+  text-decoration: none;
+  gap: 20px;
+  display: flex;
+  font-size: 16px;
+  color: white;
+}
+.largesidebar .bottom {
+  height: 100px;
+  width: 300px;
+}
+.largesidebar .bottom ul {
+  height: 100px;
+  width: 300px;
+}
+.largesidebar .bottom ul li {
+  height: 100px;
+  width: 300px;
+}
+.largesidebar .bottom ul li a {
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 120px;
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+header .search input {
+  height: 30px;
+  width: 260px;
+  border: none;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+header .search i {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-left: -30px;
+}
+header .logo {
+  font-size: 24px;
+}
+header .notification {
+  height: 120px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .notification i {
+  font-size: 25px;
+}
+header .notification i:hover {
+  color: goldenrod;
+}
+header .userData {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .userData .image #img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+header .userData .info {
+  height: 100px;
+  width: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#analytics {
+  display: flex;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+}
+#analytics .userNo {
+  height: 35px;
+  width: 160px;
+  gap: 15px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#analytics .NewBookings {
+  height: 130px;
+  width: 270px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  display: flex;
+  border-radius: 30px;
+}
+#analytics .NewBookings .icon {
+  height: inherit;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#analytics .NewBookings .icon i {
+  font-size: 40px;
+  color: greenyellow;
+  height: 50px;
+  width: 50px;
+}
+#analytics .NewBookings .icon i:hover {
+  color: red;
+}
+#analytics .NewBookings .textcover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#analytics .NewBookings .textcover .number {
+  font-size: 25px;
+}
+#analytics .NewBookings:hover {
+  background-color: goldenrod;
+}
+#analytics .Revenue {
+  height: 130px;
+  width: 270px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 20px;
+  display: flex;
+}
+#analytics .Revenue .icon {
+  height: inherit;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#analytics .Revenue .icon i {
+  font-size: 40px;
+  color: greenyellow;
+  height: 50px;
+  width: 50px;
+}
+#analytics .Revenue .icon i:hover {
+  color: red;
+}
+#analytics .Revenue .textcover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#analytics .Revenue .textcover .number {
+  font-size: 25px;
+}
+#analytics .Revenue:hover {
+  background-color: goldenrod;
+}
+
+.charts {
+  height: 460px;
+  position: sticky;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.charts .graph_cover {
+  height: 460px;
+  width: 500px;
+  background-color: white;
+}
+.charts .graph_cover .heading {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charts .pichart_cover {
+  height: 460px;
+  width: 500px;
+  background-color: white;
+}
+.charts .pichart_cover .heading {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charts .pichart_cover #pi {
+  background-color: white;
+  height: 460px;
+  width: auto;
+}
+.charts .line_cover {
+  height: 460px;
+  width: 500px;
+  background-color: white;
+}
+.charts .line_cover .heading {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charts .line_cover #pi {
+  background-color: white;
+  height: 460px;
+  width: auto;
+}/*# sourceMappingURL=dashboard.css.map */
