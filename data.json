@@ -179,6 +179,15 @@
       "mob": "8698468448",
       "password": "Anam@123",
       "cpassword": "Anam@123"
+    },
+    {
+      "id": "ace6",
+      "name": "Ramiz",
+      "email": "ramiz@gmail.com",
+      "image": "https://passport-photo.online/images/cms/prepare_lookintothecamera_860144524c.webp?quality=80&format=webp&width=1920",
+      "mob": "7845854123",
+      "password": "Ramiz@123",
+      "cpassword": "Ramiz@123"
     }
   ],
   "CustInfo": [
@@ -215,7 +224,7 @@
       "id": "8da7"
     },
     {
-      "guestName": "neha kumari ",
+      "guestName": "ramiz khan",
       "mob": "7378468448",
       "date": "2024-11-25T13:57",
       "roomType": "Ring ceremony  hall booking",
