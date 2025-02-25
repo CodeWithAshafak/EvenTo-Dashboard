@@ -20,7 +20,7 @@ function submitData(){
         "status":status
 
     }
-    fetch('http://localhost:4000/CustInfo',{
+    fetch('http://localhost:3000/public/CustInfo',{
         method:"POST",
         headers:{
              "content-type":"application/json"

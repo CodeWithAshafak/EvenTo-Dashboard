@@ -99,7 +99,7 @@
 // ======================login code ======================
 
 async function login(){
-   let data = await fetch('http://localhost:4000/user');
+   let data = await fetch('http://localhost:3000/public/user');
    let response = await data.json();
    console.log(response);
 
